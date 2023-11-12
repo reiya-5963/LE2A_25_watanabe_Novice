@@ -2,7 +2,7 @@
 
 enum SCENE {
 	TITLE,
-	STAGE,
+	GAMEPLAY,
 	CLEAR
 };
 
@@ -21,7 +21,7 @@ public:
 	int GetSceneNo();
 
 protected:
-	// ƒV[ƒ“”Ô†
+	// ã‚·ãƒ¼ãƒ³ç•ªå·
 	static int sceneNo_;
 
 };
