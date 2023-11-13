@@ -1,4 +1,4 @@
-#include "inputManager.h"
+#include "InputManager.h"
 
 InputManager* InputManager::GetInstance() {
 	// インスタンスの生成
