@@ -6,11 +6,14 @@
 #include "ClearScene.h"
 
 GameManager::GameManager() {
+	// それぞれのシーンを生成
 	sceneArr_[TITLE] = std::make_unique<TitleScene>();
 	sceneArr_[GAMEPLAY] = std::make_unique<GamePlayScene>();
 	sceneArr_[CLEAR] = std::make_unique<ClearScene>();
 
+	// 今のシーンをタイトル
 	currentSceneNo_ = TITLE;
+	// 最初の初期化処理
 	sceneArr_[currentSceneNo_]->Initialize();
 }
 
@@ -23,20 +26,25 @@ int GameManager::Run() {
 		// フレームの開始
 		Novice::BeginFrame();
 
+		// 1フレーム前のシーンを保存
 		prevSceneNo_ = currentSceneNo_;
+		// 今のシーンを取得
 		currentSceneNo_ = sceneArr_[currentSceneNo_]->GetSceneNo();
 
+		// もし1フレーム前のシーンと今のシーンが違うなら
 		if (prevSceneNo_ != currentSceneNo_) {
+			// シーンの初期化処理
 			sceneArr_[currentSceneNo_]->Initialize();
 		}
-
 
 		///
 		/// ↓更新処理ここから
 		///
 
-
+		// 入力系の更新
 		inputManager_->Update();
+		
+		// シーンの更新
 		sceneArr_[currentSceneNo_]->Update();
 
 		///
@@ -47,6 +55,7 @@ int GameManager::Run() {
 		/// ↓描画処理ここから
 		///
 
+		// 描画処理
 		sceneArr_[currentSceneNo_]->Draw();
 
 		///

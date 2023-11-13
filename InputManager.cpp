@@ -1,7 +1,9 @@
 #include "inputManager.h"
 
 InputManager* InputManager::GetInstance() {
+	// インスタンスの生成
 	static InputManager instance;
+	// インスタンスを返す
 	return &instance;
 }
 
