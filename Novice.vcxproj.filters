@@ -14,14 +14,29 @@
     <Filter Include="KamataEngine\Adapter">
       <UniqueIdentifier>{c6468eb4-788b-4a83-b207-a5f4804e56c5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="App">
+    <Filter Include="MySource">
       <UniqueIdentifier>{841399f0-8268-40a2-a16e-942dc0e652d1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="App\Scene">
+    <Filter Include="MySource\Scene">
       <UniqueIdentifier>{3d5c7998-a982-4802-b786-f4c4310a292a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="App\GameManager">
+    <Filter Include="MySource\GameManager">
       <UniqueIdentifier>{42d4ac4e-e409-45a7-b77e-880e166593e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MySource\Object">
+      <UniqueIdentifier>{59bba072-728f-4ff0-91b4-055686860d99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MySource\InputManager">
+      <UniqueIdentifier>{7f9c41b0-6a03-4a02-a1c3-37ded03e39e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MySource\Object\Bullet">
+      <UniqueIdentifier>{d45e1027-0764-4a6f-a080-8122eddeca99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MySource\Object\Enemy">
+      <UniqueIdentifier>{20d09980-fdd6-47c7-8ac5-e4e0b009c686}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MySource\Object\Player">
+      <UniqueIdentifier>{326bf7d3-ea50-4417-813f-4591ff595c4c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -47,40 +62,40 @@
       <Filter>KamataEngine\Source</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
-      <Filter>App</Filter>
-    </ClCompile>
-    <ClCompile Include="MySource\InputManager.cpp">
-      <Filter>KamataEngine</Filter>
+      <Filter>MySource</Filter>
     </ClCompile>
     <ClCompile Include="MySource\Scene\ClearScene.cpp">
-      <Filter>App\Scene</Filter>
+      <Filter>MySource\Scene</Filter>
     </ClCompile>
     <ClCompile Include="MySource\Scene\GamePlayScene.cpp">
-      <Filter>App\Scene</Filter>
+      <Filter>MySource\Scene</Filter>
     </ClCompile>
     <ClCompile Include="MySource\Scene\TitleScene.cpp">
-      <Filter>App\Scene</Filter>
+      <Filter>MySource\Scene</Filter>
     </ClCompile>
     <ClCompile Include="MySource\Scene\IScene.cpp">
-      <Filter>App\Scene</Filter>
+      <Filter>MySource\Scene</Filter>
     </ClCompile>
     <ClCompile Include="MySource\GameManager.cpp">
-      <Filter>App\GameManager</Filter>
+      <Filter>MySource\GameManager</Filter>
     </ClCompile>
-    <ClCompile Include="MySource\Object\Player.cpp">
-      <Filter>KamataEngine</Filter>
+    <ClCompile Include="MySource\InputManager.cpp">
+      <Filter>MySource\InputManager</Filter>
     </ClCompile>
     <ClCompile Include="MySource\Object\Bullet.cpp">
-      <Filter>KamataEngine</Filter>
+      <Filter>MySource\Object\Bullet</Filter>
     </ClCompile>
     <ClCompile Include="MySource\Object\BulletManager.cpp">
-      <Filter>KamataEngine</Filter>
-    </ClCompile>
-    <ClCompile Include="MySource\Object\Enemy.cpp">
-      <Filter>KamataEngine</Filter>
+      <Filter>MySource\Object\Bullet</Filter>
     </ClCompile>
     <ClCompile Include="MySource\Object\EnemyManager.cpp">
-      <Filter>KamataEngine</Filter>
+      <Filter>MySource\Object\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="MySource\Object\Enemy.cpp">
+      <Filter>MySource\Object\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="MySource\Object\Player.cpp">
+      <Filter>MySource\Object\Player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -166,28 +181,40 @@
       <Filter>KamataEngine</Filter>
     </ClInclude>
     <ClInclude Include="MySource\Scene\ClearScene.h">
-      <Filter>App\Scene</Filter>
+      <Filter>MySource\Scene</Filter>
     </ClInclude>
     <ClInclude Include="MySource\Scene\GamePlayScene.h">
-      <Filter>App\Scene</Filter>
+      <Filter>MySource\Scene</Filter>
     </ClInclude>
     <ClInclude Include="MySource\Scene\TitleScene.h">
-      <Filter>App\Scene</Filter>
+      <Filter>MySource\Scene</Filter>
     </ClInclude>
     <ClInclude Include="MySource\Scene\IScene.h">
-      <Filter>App\Scene</Filter>
+      <Filter>MySource\Scene</Filter>
     </ClInclude>
     <ClInclude Include="MySource\GameManager.h">
-      <Filter>App\GameManager</Filter>
+      <Filter>MySource\GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="MySource\Object\PlayObject.h">
+      <Filter>MySource\Object</Filter>
     </ClInclude>
     <ClInclude Include="MySource\InputManager.h">
-      <Filter>KamataEngine</Filter>
+      <Filter>MySource\InputManager</Filter>
     </ClInclude>
-    <ClInclude Include="MySource\Object\Player.h" />
-    <ClInclude Include="MySource\Object\Bullet.h" />
-    <ClInclude Include="MySource\Object\BulletManager.h" />
-    <ClInclude Include="MySource\Object\Enemy.h" />
-    <ClInclude Include="MySource\Object\EnemyManager.h" />
-    <ClInclude Include="MySource\Object\PlayObject.h" />
+    <ClInclude Include="MySource\Object\Bullet.h">
+      <Filter>MySource\Object\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="MySource\Object\BulletManager.h">
+      <Filter>MySource\Object\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="MySource\Object\EnemyManager.h">
+      <Filter>MySource\Object\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="MySource\Object\Enemy.h">
+      <Filter>MySource\Object\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="MySource\Object\Player.h">
+      <Filter>MySource\Object\Player</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
